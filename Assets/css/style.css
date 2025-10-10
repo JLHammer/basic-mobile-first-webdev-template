@@ -1,0 +1,52 @@
+/*  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* OBS! This template uses border-box */
+}
+
+/* Set background color */
+html,
+body,
+aside,
+main {
+  background-color: var(--bg);
+}
+
+/* Style html & body together */
+html,
+body {
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* Uncomment below to set a default font-family */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+body {
+  font-size: 1.6rem; /* Back to default font-size, accomodating for the 62.5% */
+}
+
+header {
+}
+
+aside {
+}
+
+main {
+}
+
+/* Sections inside main */
+main section {
+}
+
+/* Articles inside sections in main */
+main section article {
+}
+
+footer {
+}

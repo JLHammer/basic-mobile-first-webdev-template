@@ -1,0 +1,35 @@
+/* Put variables in here */
+:root {
+  color-scheme: light dark; /* Enables automatic light/dark mode based on user preference */
+
+  /* Define your color variables here */
+  --primary-color: /*Put your primary color here*/ ;
+  --secondary-color: /*Put your secondary color here*/ ;
+  --tertiary-color: /*Put your tertiary color here*/ ;
+
+  /* Neutral colors */
+  --white: #ffffff;
+  --grey: #979797;
+  --black: #000000;
+
+  /* Base & Accent colors for light mode & dark mode; change as you see fit */
+  --base-color: light-dark(var(--primary-color), var(--primary-color));
+  --accent: light-dark(var(--secondary-color), var(--secondary-color));
+
+  /* Background color for light mode & dark mode; change as you see fit */
+  --bg-color: light-dark(#fff, #000);
+  /* Text color for light mode & dark mode; change as you see fit */
+  --text-color: light-dark(var(--primary-color), #fff);
+
+  /* Link colors - uncomment below and change as you see fit */
+  /* --link-color: #0000ee;
+  --link-visited-color: #551a8b;
+  --link-hover-color: #0a58ca;
+  --link-active-color: #ee0000; */
+
+  --focus-color: /* Put your focus color here */ ;
+
+  --button-color: /* Put your button color here */ ;
+  --button-hover-color: /* Put your button hover color here */ ;
+  --button-active-color: /* Put your button active color here */ ;
+}
