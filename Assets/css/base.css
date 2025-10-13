@@ -1,35 +1,44 @@
-/* Put variables in here */
+/* Put your variables in root */
 :root {
   color-scheme: light dark; /* Enables automatic light/dark mode based on user preference */
 
-  /* Define your color variables here */
-  --primary-color: /*Put your primary color here*/ ;
-  --secondary-color: /*Put your secondary color here*/ ;
-  --tertiary-color: /*Put your tertiary color here*/ ;
+  /* Theme colors */
+  --primary-color: green;
+  --secondary-color: blue;
+  /* --tertiary-color: ; */
 
   /* Neutral colors */
   --white: #ffffff;
+  --whitesmoke: #f5f5f5;
   --grey: #979797;
+  --dark-grey: #333333;
   --black: #000000;
+  --midnight-black: #0d0d0d;
 
-  /* Base & Accent colors for light mode & dark mode; change as you see fit */
+  /* Base & Accent colors for light mode & dark mode */
   --base-color: light-dark(var(--primary-color), var(--primary-color));
-  --accent: light-dark(var(--secondary-color), var(--secondary-color));
+  --accent-color: light-dark(var(--secondary-color), var(--secondary-color));
 
-  /* Background color for light mode & dark mode; change as you see fit */
-  --bg-color: light-dark(#fff, #000);
-  /* Text color for light mode & dark mode; change as you see fit */
-  --text-color: light-dark(var(--primary-color), #fff);
+  /* Background & text color */
+  --bg-color: light-dark(var(--whitesmoke), var(--midnight-black));
+  --text-color: light-dark(var(--midnight-black), var(--whitesmoke));
 
-  /* Link colors - uncomment below and change as you see fit */
-  /* --link-color: #0000ee;
+  --font-family: "Arial, Helvetica, sans-serif"; /* Change to your preferred font-family */
+
+  /* Link colors */
+  --link-color: #0000ee;
   --link-visited-color: #551a8b;
   --link-hover-color: #0a58ca;
-  --link-active-color: #ee0000; */
+  --link-active-color: #ee0000;
 
-  --focus-color: /* Put your focus color here */ ;
+  --focus-color: var(--primary-color); /* Color for focus outlines */
 
-  --button-color: /* Put your button color here */ ;
-  --button-hover-color: /* Put your button hover color here */ ;
-  --button-active-color: /* Put your button active color here */ ;
+  /* Button colors */
+  --button-color: var(--primary-color);
+  --button-hover-color: var(--secondary-color);
+  --button-active-color: var(--tertiary-color);
+
+  /* Layout */
+  --header-height: 7vh;
+  --footer-height: 7vh;
 }

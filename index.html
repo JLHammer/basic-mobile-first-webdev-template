@@ -3,28 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="Assets/Images/favicon-placeholder.png"
+    />
     <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="Assets/css/base.css" />
+    <link rel="stylesheet" href="Assets/css/utils.css" />
+    <!-- Put any additional style sheets here -->
     <script src="Assets/js/main.js" defer></script>
+    <!-- Put any additional scripts here with defer attribute -->
     <title>Basic HTML/CSS/JS template</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><a href="#">Header item 1</a></li>
+          <li><a href="#">Header item 2</a></li>
+          <li><a href="#">Header item 3</a></li>
+          <li><a href="#">Header item 4</a></li>
         </ul>
       </nav>
     </header>
-    <!-- Optional aside: -->
-    <!-- <aside></aside> -->
+    <aside>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </aside>
     <main>
-      <section id="section1"></section>
-      <section id="section2"></section>
-      <section id="section3"></section>
+      <section id="section1">
+        <h1>Section 1</h1>
+        <article id="article1">
+          <h2>Article in Section 1</h2>
+        </article>
+      </section>
+      <section id="section2">
+        <h1>Section 2</h1>
+        <article id="article2">
+          <h2>Article in Section 2</h2>
+        </article>
+      </section>
+      <section id="section3">
+        <h1>Section 3</h1>
+        <article id="article3">
+          <h2>Article in Section 3</h2>
+        </article>
+      </section>
+
+      <div
+        style="
+          display: inline;
+          height: 1000px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        Blank scrollable space
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">Footer item 1</a></li>
+          <li><a href="#">Footer item 2</a></li>
+          <li><a href="#">Footer item 3</a></li>
+          <li><a href="#">Footer item 4</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
