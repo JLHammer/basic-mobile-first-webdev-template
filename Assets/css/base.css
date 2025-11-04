@@ -1,11 +1,13 @@
-/* Put your variables in root */
+/* Font imports go here: */
+/* @import url("LINK"); */
+
 :root {
-  color-scheme: light dark; /* Enables automatic light/dark mode based on user preference */
+  /* Enables automatic light/dark mode based on user preference */
+  color-scheme: light dark;
 
   /* Theme colors */
   --primary-color: green;
   --secondary-color: blue;
-  /* --tertiary-color: ; */
 
   /* Neutral colors */
   --white: #ffffff;
@@ -25,11 +27,11 @@
 
   --font-family: "Arial, Helvetica, sans-serif"; /* Change to your preferred font-family */
 
-  /* Link colors */
-  --link-color: #0000ee;
+  /* Link colors, uncomment to customize */
+  /* --link-color: #0000ee;
   --link-visited-color: #551a8b;
   --link-hover-color: #0a58ca;
-  --link-active-color: #ee0000;
+  --link-active-color: #ee0000; */
 
   --focus-color: var(--primary-color); /* Color for focus outlines */
 

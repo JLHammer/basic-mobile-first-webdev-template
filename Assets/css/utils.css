@@ -1,8 +1,11 @@
 /* Put your utility classes here */
-
-/* For example, a utility class for centering content */
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }
