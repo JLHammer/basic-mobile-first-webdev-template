@@ -105,7 +105,11 @@ main {
   }
 }
 
-img {
+img,
+picture,
+svg,
+video,
+canvas {
   display: block;
   max-width: 100%;
   height: auto;
