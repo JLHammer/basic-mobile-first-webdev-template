@@ -1,1 +1,5 @@
-console.log("Hello, world!"); // Open dev tools and see the message in the console to verify that the script is linked correctly.
+console.log("main.js loaded successfully.");
+
+import "./modal-trigger.js";
+import "./form-validation.js";
+console.log("JS Modules loaded successfully.");

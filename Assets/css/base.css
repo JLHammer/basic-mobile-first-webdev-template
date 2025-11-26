@@ -2,14 +2,18 @@
 /* @import url("LINK"); */
 
 :root {
-  /* Enables automatic light/dark mode based on user preference */
-  color-scheme: light dark;
+  /* LIGHT/DARK MODE */
+  color-scheme: light dark; /* Enables automatic light/dark mode based on user preference */
 
-  /* Theme colors */
-  --primary-color: green;
-  --secondary-color: blue;
+  /* THEME COLORS */
+  /* --primary-color: ;
+  --secondary-color: ; */
 
-  /* Neutral colors */
+  /* BASE & ACCENT COLORS */
+  /* --base-color: light-dark(var(--primary-color), var(--primary-color));
+  --accent-color: light-dark(var(--secondary-color), var(--secondary-color)); */
+
+  /* NEUTRAL COLORS */
   --white: #ffffff;
   --whitesmoke: #f5f5f5;
   --grey: #979797;
@@ -17,30 +21,30 @@
   --black: #000000;
   --midnight-black: #0d0d0d;
 
-  /* Base & Accent colors for light mode & dark mode */
-  --base-color: light-dark(var(--primary-color), var(--primary-color));
-  --accent-color: light-dark(var(--secondary-color), var(--secondary-color));
-
-  /* Background & text color */
+  /* DEFAULT BACKGROUND & TEXT COLOR */
   --bg-color: light-dark(var(--whitesmoke), var(--midnight-black));
   --text-color: light-dark(var(--midnight-black), var(--whitesmoke));
 
-  --font-family: "Arial, Helvetica, sans-serif"; /* Change to your preferred font-family */
+  --font-family: "Arial, Helvetica, sans-serif"; /* Change to your preferred/imported font-family */
 
-  /* Link colors, uncomment to customize */
+  /* LINK COLORS */
   /* --link-color: #0000ee;
   --link-visited-color: #551a8b;
   --link-hover-color: #0a58ca;
   --link-active-color: #ee0000; */
 
-  --focus-color: var(--primary-color); /* Color for focus outlines */
+  /* --focus-color: var(--primary-color); */ /* Color for focus outlines */
 
-  /* Button colors */
-  --button-color: var(--primary-color);
-  --button-hover-color: var(--secondary-color);
-  --button-active-color: var(--tertiary-color);
+  /* LAYOUT */
+  --header-height: 7.5vh;
+  --footer-height: 7.5vh;
 
-  /* Layout */
-  --header-height: 7vh;
-  --footer-height: 7vh;
+  /* Button */
+  /* --button-bg-color: ;
+  --button-text-color: ;
+  --button-hover-color: ;
+  --button-active-color: ; */
+
+  --button-border-radius: 2rem;
+  --button-padding: 0.5rem 2rem;
 }

@@ -1,0 +1,35 @@
+aside.hidden {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  font-size: 2rem;
+  border: var(--dark-grey) 1px solid;
+
+  justify-content: center;
+
+  & ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+    & li {
+      & a {
+        padding: 0.5rem;
+        text-decoration: none;
+      }
+
+      & a:hover {
+        text-decoration: underline;
+        background-color: var();
+      }
+    }
+  }
+}
+
+aside.show {
+}

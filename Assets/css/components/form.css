@@ -1,0 +1,138 @@
+form {
+  width: 100%;
+
+  padding: 0rem 1rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* For aligning submit and reset button */
+  & > div:has(> button) {
+    display: flex;
+    align-self: center;
+  }
+}
+
+fieldset {
+  width: 100%;
+
+  padding: 0.5rem;
+
+  display: grid;
+  justify-items: center;
+  grid-gap: 0.2rem;
+
+  border: var(--white) solid 2.5px;
+  border-radius: 1rem;
+
+  text-align: center;
+
+  & > div.form-btn-group {
+    width: 100%;
+    margin: 1.5rem 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+legend {
+  font-size: 1.6rem;
+  padding: 0 0.7rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+fieldset,
+input,
+textarea,
+button,
+select {
+  font-family: var(--font-family);
+}
+
+label {
+  color: var(--color3);
+  width: fit-content;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+input {
+  width: 90%;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: var(--text-color) 1.2px solid;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1.7rem;
+  text-indent: 0.25rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input::placeholder {
+  color: var(--color1);
+  opacity: 0.4;
+}
+
+textarea {
+  min-height: 12.5dvh;
+  padding: 0.1rem 0.25rem;
+  background-color: var(--white);
+  color: var(--color3);
+  font-size: 1.8rem;
+  border: transparent 1px solid;
+  transition: 0.2s ease-in-out;
+}
+
+textarea:hover,
+textarea:focus,
+textarea:active {
+  border-color: var(--color3);
+  box-shadow: 0 2px 5px var(--color3);
+}
+
+textarea::placeholder {
+  color: var(--color3);
+  opacity: 0.7;
+}
+
+input:valid {
+  border-color: green;
+  box-shadow: 0 0 5px green;
+}
+
+/* Valid input: green border */
+input:hover:valid {
+  border-color: green;
+  box-shadow: 0 0 5px green;
+}
+
+/* Invalid input: red border */
+input:hover:invalid {
+  border-color: red;
+  box-shadow: 0 0 5px red;
+}
+
+/* Active/focused input effect */
+input:focus {
+  outline: none;
+  border-color: #888; /* subtle highlight while typing */
+  box-shadow: 0 0 5px #888;
+}
+
+/* Only show green if valid AND focused */
+input:focus:valid {
+  border-color: green;
+  box-shadow: 0 0 5px green;
+}
+
+/* Only show red if invalid AND focused */
+input:focus:invalid {
+  border-color: red;
+  box-shadow: 0 0 5px red;
+}
