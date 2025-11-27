@@ -106,10 +106,25 @@ input:valid {
   box-shadow: 0 0 5px green;
 }
 
+input.invalid {
+  border-color: red;
+  box-shadow: 0 0 5px red;
+}
+
 /* Valid input: green border */
 input:hover:valid {
   border-color: green;
   box-shadow: 0 0 5px green;
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+  box-shadow: 0 0 5px green;
+}
+
+input:user-invalid {
+  border-color: red;
+  box-shadow: 0 0 5px red;
 }
 
 /* Invalid input: red border */

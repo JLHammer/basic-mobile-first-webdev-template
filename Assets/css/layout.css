@@ -65,3 +65,7 @@ canvas {
   max-width: 100%;
   height: auto;
 }
+
+[inert] {
+  opacity: 0.8;
+}

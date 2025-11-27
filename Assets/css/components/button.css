@@ -1,7 +1,7 @@
 button {
-  padding: 0.5rem 2rem;
+  padding: var(--button-padding);
   border: #007bff 2px solid;
-  border-radius: 2rem;
+  border-radius: var(--button-border-radius);
   transition: 0.15s ease-in-out;
 }
 
