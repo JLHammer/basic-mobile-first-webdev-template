@@ -1,0 +1,11 @@
+/* Base mobile query for DevTools */
+@media (min-width: 375px) {
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+}
