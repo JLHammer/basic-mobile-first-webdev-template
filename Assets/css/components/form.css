@@ -101,53 +101,29 @@ textarea::placeholder {
   opacity: 0.7;
 }
 
-input:valid {
+input.valid {
   border-color: green;
-  box-shadow: 0 0 5px green;
+  box-shadow: 0 0 3px green;
 }
 
 input.invalid {
   border-color: red;
-  box-shadow: 0 0 5px red;
+  box-shadow: 0 0 3px red;
 }
 
-/* Valid input: green border */
-input:hover:valid {
-  border-color: green;
-  box-shadow: 0 0 5px green;
-}
-
-input:valid:not(:placeholder-shown) {
-  border-color: green;
-  box-shadow: 0 0 5px green;
-}
-
-input:user-invalid {
-  border-color: red;
-  box-shadow: 0 0 5px red;
-}
-
-/* Invalid input: red border */
-input:hover:invalid {
-  border-color: red;
-  box-shadow: 0 0 5px red;
-}
-
-/* Active/focused input effect */
+input:hover,
 input:focus {
   outline: none;
-  border-color: #888; /* subtle highlight while typing */
-  box-shadow: 0 0 5px #888;
+  border-color: #b4b4b4;
+  box-shadow: 0 0 5px #b4b4b4;
 }
 
-/* Only show green if valid AND focused */
-input:focus:valid {
+input.valid:focus {
   border-color: green;
   box-shadow: 0 0 5px green;
 }
 
-/* Only show red if invalid AND focused */
-input:focus:invalid {
+input.invalid:focus {
   border-color: red;
   box-shadow: 0 0 5px red;
 }

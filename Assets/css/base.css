@@ -40,10 +40,8 @@
   --footer-height: 7.5vh;
 
   /* Button */
-  /* --button-bg-color: ;
-  --button-text-color: ;
-  --button-hover-color: ;
-  --button-active-color: ; */
+  --button-bg-color: #007bff;
+  --button-text-color: var(--white);
 
   --button-border-radius: 2rem;
   --button-padding: 0.5rem 2rem;

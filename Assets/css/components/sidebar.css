@@ -1,21 +1,29 @@
-aside.hidden {
+aside {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: var(--header-height);
+  bottom: var(--footer-height);
+  left: -80%;
 
-  font-size: 2rem;
+  padding: 1rem 2rem;
+
+  width: 80%;
+
   border: var(--dark-grey) 1px solid;
 
-  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  transition: left 0.3s ease;
+
+  font-size: 2rem;
 
   & ul {
+    width: 100%;
+
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
 
     & li {
       & a {
@@ -31,5 +39,7 @@ aside.hidden {
   }
 }
 
-aside.show {
+aside.open {
+  align-items: center;
+  left: 0;
 }

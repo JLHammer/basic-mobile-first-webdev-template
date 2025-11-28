@@ -1,11 +1,25 @@
 button {
   padding: var(--button-padding);
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
   border: #007bff 2px solid;
   border-radius: var(--button-border-radius);
   transition: 0.15s ease-in-out;
 }
 
+button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
 button:hover {
+  box-shadow: 0 0 5px 2px #007bff;
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -15,10 +29,7 @@ button.modal-open-btn {
   color: var(--white);
 }
 
-button.modal-open-btn:hover {
-  box-shadow: 0 0 5px 2px #007bff;
-}
-
+/* Form buttons */
 /* Submit & Reset button common styling */
 div.form-btn-group > button {
   color: var(--white);
@@ -33,6 +44,18 @@ button[type="submit"]:hover {
   box-shadow: 0 0 5px 2px #28a745;
 }
 
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+button[type="submit"]:disabled:hover {
+  transform: none;
+}
+
 button[type="reset"] {
   background-color: #dc3545;
   border-color: #dc3545;
@@ -40,4 +63,16 @@ button[type="reset"] {
 
 button[type="reset"]:hover {
   box-shadow: 0 0 5px 2px #dc3545;
+}
+
+button[type="reset"]:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+button[type="reset"]:disabled:hover {
+  transform: none;
 }

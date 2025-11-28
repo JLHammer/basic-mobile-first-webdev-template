@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="Assets/css/reset.css" />
     <link rel="stylesheet" href="Assets/css/base.css" />
     <link rel="stylesheet" href="Assets/css/layout.css" />
-
     <link rel="stylesheet" href="Assets/css/components/header.css" />
     <link rel="stylesheet" href="Assets/css/components/footer.css" />
     <link rel="stylesheet" href="Assets/css/components/sidebar.css" />
@@ -54,8 +53,10 @@
 
     <!-- #region MAIN START -->
     <main>
+      <button class="modal-open-btn">Open Modal with Form</button>
+      <button class="aside-open-btn">Open Aside</button>
+
       <section id="section1">
-        <button class="modal-open-btn overlay">Open Form</button>
         <h1>Section 1</h1>
         <article>
           <h2>Article in Section 1</h2>
@@ -89,12 +90,12 @@
     <!-- #endregion MAIN END -->
 
     <!-- #region ASIDE START -->
-    <aside class="hidden">
+    <aside>
       <section>
         <ul>
-          <li><a href="#section1">Aside section 1</a></li>
-          <li><a href="#section2">Aside section 2</a></li>
-          <li><a href="#section3">Aside section 3</a></li>
+          <li><a href="#">Nav 1</a></li>
+          <li><a href="#">Nav 2</a></li>
+          <li><a href="#">Nav 3</a></li>
         </ul>
       </section>
     </aside>
@@ -103,16 +104,34 @@
     <!-- #region DIALOG START -->
     <dialog>
       <section>
-        <button class="modal-close-btn">&times;</button>
-        <form action="#submit" id="form">
+        <button class="modal-close-btn no-select">&times;</button>
+        <form action="#submit" id="form" novalidate>
           <fieldset>
             <legend>Please fill out the form below</legend>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name Middlename Surname"
+              required
+            />
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+            />
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+45 12 34 56 78"
+              required
+            />
             <div class="form-btn-group">
               <button type="reset" id="reset-btn">Reset</button>
               <button type="submit" id="submit-btn">Submit</button>
@@ -127,10 +146,10 @@
     <footer>
       <nav>
         <ul>
-          <li><a href="#">Footer item 1</a></li>
-          <li><a href="#">Footer item 2</a></li>
-          <li><a href="#">Footer item 3</a></li>
-          <li><a href="#">Footer item 4</a></li>
+          <li><a href="#">Nav 1</a></li>
+          <li><a href="#">Nav 2</a></li>
+          <li><a href="#">Nav 3</a></li>
+          <li><a href="#">Nav 4</a></li>
         </ul>
       </nav>
     </footer>

@@ -1,18 +1,14 @@
-// form-submit.js
-import { formIsValid } from "./form-validation.js";
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("form");
+  const resetBtn = document.getElementById("reset-btn");
 
-const form = document.getElementById("form");
-const dialog = document.querySelector("dialog");
-
-form?.addEventListener("submit", (e) => {
-  console.log("Submit event fired. formIsValid =", formIsValid);
-
-  if (!formIsValid) {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
-    alert("Please fill out the form correctly before submitting.");
-    return;
-  }
+    alert("Form submitted successfully!");
 
-  alert("Form submitted successfully!");
-  if (dialog && dialog.open) dialog.close();
+    const dialog = document.querySelector("dialog");
+    if (dialog && dialog.open) dialog.close();
+
+    resetBtn.click();
+  });
 });
